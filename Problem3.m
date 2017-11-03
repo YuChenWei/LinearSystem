@@ -1,0 +1,9 @@
+clc;
+clear;
+A=[-1,4,-4;-3,-4,6;-3,-1,3];
+B=[0;1;1];
+Con=[B,A*B,A^(2)*B];
+rank(Con)
+[V,D]=eig(A)
+inv(V)*A*V
+inv(V)*B
