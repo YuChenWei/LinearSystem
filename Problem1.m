@@ -1,0 +1,16 @@
+clc;
+clear;
+A1=[1,2;2,4;3,6];
+A2=[1,2,3;1,2,4];
+A3=[1,2,3,6;1,2,4,8;0,0,1,2];
+[U1,S1,V1]=svd(A1);
+R1=orth(A1);
+N1=null(A1');
+[U2,S2,V2]=svd(A2);
+rank(A2);
+R2=orth(A2);
+N2=null(A2');
+[U3,S3,V3]=svd(A3);
+rank(A3);
+R3=orth(A3)
+N3=null(A3')
